@@ -246,6 +246,8 @@ the relative path of a directory given another one::
     );
     // returns 'videos/'
     $fs->makePathRelative('/tmp/videos', '/tmp')
+    // returns '../../logs/'
+    $fs->makePathRelative('var/logs', 'var/cache/prod')
 
 mirror
 ~~~~~~
